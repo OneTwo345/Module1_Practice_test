@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Exam</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //Câu 1: Xây dựng hàm giải phương trình bậc 2, biết tham số là các hệ số nguyên a. b và c. 
+    function giaiPTBac2(a, b, c) {
+
+        let delta = b * b - 4 * a * c;
+        let alpha = Math.sqrt(delta)
+        if (delta < 0) {
+            alert("Phương trình vô nghiệm")
+            return;
+        };
+        if (delta == 0) {
+            console.log(`Phương trình có nghiệm kép x1 = x2 = ${-b / (2 * a)}`)
+            return;
+        } else {
+            console.log(`Phương trình có hai nghiệm phân biệt x1 = ${(-b + alpha) / (2 * a)}`);
+            console.log(`Phương trình có hai nghiệm phân biệt x2 = ${(-b - alpha) / (2 * a)}`);
+            return;
+        }
+
+    }
+    giaiPTBac2(8, 12, -20)
+</script>
+
+</html>

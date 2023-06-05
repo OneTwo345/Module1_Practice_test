@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    class Staff {
+        constructor(fullname, email) {
+            this.fullname = fullname;
+            this.email = email;
+            this.setFullname = function (fullname) {
+                this.fullname = fullname
+            }
+            this.getFullname = function () {
+                return this.fullname
+            }
+            this.setEmail = function (email) {
+                this.email = email
+            };
+            this.getEmail = function () {
+                return this.email;
+            };
+            this.toString = function () {
+                return this.toString()
+            }
+        }
+    }
+    var david = new Staff("David", "david@gmail.com")
+    // console.log(david)
+    david.setFullname("David Do");
+    console.log(david);
+    david.setEmail("daviddo@gmail.com");
+    console.log(david);
+    // david.toString();
+    // console.log(david);
+
+    var duy = new Staff("Duy", "duy@gmail.com");
+    var tuan = new Staff("Tuan", "tuan@gmail.com");
+    // console.log(Staff)
+    let myArray = [];
+    myArray.push(david);
+    myArray.push(duy);
+    myArray.push(tuan);
+
+    console.log(myArray);
+
+</script>
+
+</html>

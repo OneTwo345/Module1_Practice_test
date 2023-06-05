@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //Xây dựng hàm trả về vị trí của phần tử cần tìm cho một mảng cho trước.
+    let myArray = [1, 3, 4, 8, 9];
+    function findTheNumber(number, arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (number == arr[i]) {
+                console.log(` Số ${number} có mặt trong mảng, tại vị trí ${i}`);
+                return;
+
+            }
+        }
+        console.log(` Số ${number} không có mặt trong mảng`);
+
+    }
+    // findTheNumber(5, myArray);
+
+    // Chương trình tìm kiếm số có trong mảng hay không?
+    let number1 = Number(prompt("Nhập vào số cần tìm"));
+    while (isNaN(number1)) {
+        number1 = Number(prompt("Vui lòng nhập số hợp lệ"))
+    };
+    findTheNumber(number1, myArray)
+
+</script>
+
+</html>
